@@ -1,2 +1,2 @@
 # Sleep Calculator
-A High School Student Sleep Calculator Project with C++
+An Easy High School Student Sleep Calculator Project with C++
