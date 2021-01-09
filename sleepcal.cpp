@@ -21,24 +21,6 @@ int main()
             //โปรแกรมจะถามต่อว่า มีปัญหาการนอนหรือไม่ (Y/N)
             scanf("%s", &sleep_problems);
 
-        /*/
-        !! ไม่ใช้โค้ดส่วนนี้ !!
-        !! Not Use !!
-        if (sleep_problems == "Y")
-        {
-        //ถ้ามีปัญหาการนอน (Y) ให้ไล่กลับไปนอน
-            printf("Go back and sleep now!");
-        }
-        else if (sleep_problems == "N")
-        {
-        //ถ้าไม่มีปัญหาการนอน (N) ก็บอกว่าควรนอนมากกว่านี้
-            printf("You should sleep more!");
-        }
-        else {
-            return(0);
-        }
-        /*/
-
             switch (sleep_problems)
             {
             case 'Y':
@@ -46,7 +28,7 @@ int main()
                 printf("Go back and sleep now!\n");
                 return (0);
                 break;
-
+            
             case 'N':
                 //ถ้าไม่มีปัญหาการนอน (N) ก็บอกว่าควรนอนมากกว่านี้
                 printf("You should sleep more!\n");
