@@ -44,11 +44,13 @@ int main()
             case 'Y':
                 //ถ้ามีปัญหาการนอน (Y) ให้ไล่กลับไปนอน
                 printf("Go back and sleep now!\n");
+                return (0);
                 break;
 
             case 'N':
                 //ถ้าไม่มีปัญหาการนอน (N) ก็บอกว่าควรนอนมากกว่านี้
                 printf("You should sleep more!\n");
+                return (0);
                 break;
             }
         }
@@ -59,6 +61,7 @@ int main()
             //ให้แสดงคำชม "ดีมาก"
             printf("-------------\n");
             printf("Good Job!\n");
+            return (0);
         }
 
         else if (sleep > 8 && sleep < 32)
@@ -67,13 +70,16 @@ int main()
             //ให้โปรแกรมแสดงคำแนะนำ "มึงนอนมากเกินไปแล้ว"
             printf("-------------\n");
             printf("You sleep too much!\n");
+            return (0);
         }
-        else
+        
+        else 
         {
             printf("Error!");
             printf("\nDo you want to try again? (Y/N)");
             scanf("%d", &try_again);
         }
+        
     } while (try_again == 89);
 
     return (0);
