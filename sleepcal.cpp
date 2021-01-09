@@ -1,4 +1,4 @@
-//sleepcal.c
+//sleepcal.cpp
 #include <stdio.h>
 
 int main()
@@ -21,7 +21,7 @@ int main()
             //โปรแกรมจะถามต่อว่า มีปัญหาการนอนหรือไม่ (Y/N)
             scanf("%s", &sleep_problems);
 
-            /*/
+        /*/
         !! ไม่ใช้โค้ดส่วนนี้ !!
         !! Not Use !!
         if (sleep_problems == "Y")
@@ -72,14 +72,14 @@ int main()
             printf("You sleep too much!\n");
             return (0);
         }
-        
-        else 
+
+        else
         {
             printf("Error!");
             printf("\nDo you want to try again? (Y/N)");
             scanf("%d", &try_again);
         }
-        
+
     } while (try_again == 89);
 
     return (0);
