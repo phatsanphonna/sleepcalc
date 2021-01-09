@@ -4,21 +4,24 @@
 int main()
 {
     int sleep;
+    int try_again;
     char sleep_problems;
 
     printf("How many hours have you sleep?\n");
     //ตรงนี้ต้องการทราบคำตอบว่า "นอนไปกี่ชั่วโมง"
     scanf("%d", &sleep);
 
-    if (sleep <= 5)
+    while (try_again != 0)
     {
-        //ถ้านอนน้อยกว่า หรือ เท่ากับ 5 ชั่วโมง (sleep<=5)
-        printf("-------------\n");
-        printf("Do you have any problems in sleeping? (Y/N)\n");
-        //โปรแกรมจะถามต่อว่า มีปัญหาการนอนหรือไม่ (Y/N)
-        scanf("%s", &sleep_problems);
+        if (sleep <= 5)
+        {
+            //ถ้านอนน้อยกว่า หรือ เท่ากับ 5 ชั่วโมง (sleep<=5)
+            printf("-------------\n");
+            printf("Do you have any problems in sleeping? (Y/N)\n");
+            //โปรแกรมจะถามต่อว่า มีปัญหาการนอนหรือไม่ (Y/N)
+            scanf("%s", &sleep_problems);
 
-        /*/
+            /*/
         !! ไม่ใช้โค้ดส่วนนี้ !!
         !! Not Use !!
         if (sleep_problems == "Y")
@@ -36,35 +39,42 @@ int main()
         }
         /*/
 
-        switch (sleep_problems)
-        {
-        case 'Y':
-            //ถ้ามีปัญหาการนอน (Y) ให้ไล่กลับไปนอน
-            printf("Go back and sleep now!\n");
-            break;
+            switch (sleep_problems)
+            {
+            case 'Y':
+                //ถ้ามีปัญหาการนอน (Y) ให้ไล่กลับไปนอน
+                printf("Go back and sleep now!\n");
+                break;
 
-        case 'N':
-            //ถ้าไม่มีปัญหาการนอน (N) ก็บอกว่าควรนอนมากกว่านี้
-            printf("You should sleep more!\n");
-            break;
+            case 'N':
+                //ถ้าไม่มีปัญหาการนอน (N) ก็บอกว่าควรนอนมากกว่านี้
+                printf("You should sleep more!\n");
+                break;
+            }
         }
-    }
 
-    else if (sleep <= 8)
-    {
-        //ถ้านอนน้อยกว่า 8 ชั่วโมง แต่มากกว่า 5 ชั่วโมง (5>sleep<8)
-        //ให้แสดงคำชม "ดีมาก"
-        printf("-------------\n");
-        printf("Good Job!\n");
-    }
+        else if (sleep > 5 && sleep <= 8)
+        {
+            //ถ้านอนน้อยกว่า 8 ชั่วโมง แต่มากกว่า 5 ชั่วโมง (5>sleep<8)
+            //ให้แสดงคำชม "ดีมาก"
+            printf("-------------\n");
+            printf("Good Job!\n");
+        }
 
-    else if (sleep > 8)
-    {
-        //ถ้านอนมากกว่า 8 ชั่วโมงขึ้นไป (sleep>8)
-        //ให้โปรแกรมแสดงคำแนะนำ "มึงนอนมากเกินไปแล้ว"
-        printf("-------------\n");
-        printf("You sleep too much!\n");
+        else if (sleep > 8)
+        {
+            //ถ้านอนมากกว่า 8 ชั่วโมงขึ้นไป (sleep>8)
+            //ให้โปรแกรมแสดงคำแนะนำ "มึงนอนมากเกินไปแล้ว"
+            printf("-------------\n");
+            printf("You sleep too much!\n");
+        }
+        else
+        {
+            printf("Error");
+            printf("\nDo you wnat to try again? (Y=1/N=0)");
+            scanf("%d",&try_again);
+        }
+        
     }
-
     return (0);
 }
