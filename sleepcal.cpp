@@ -1,4 +1,4 @@
-//Sleep Calculator.c
+//sleepcal.c
 #include <stdio.h>
 
 int main()
