@@ -7,12 +7,12 @@ int main()
     int try_again;
     char sleep_problems;
 
-    printf("How many hours have you sleep?\n");
-    //ตรงนี้ต้องการทราบคำตอบว่า "นอนไปกี่ชั่วโมง"
-    scanf("%d", &sleep);
-
-    while (try_again != 0)
+    do
     {
+        printf("How many hours have you sleep?\n");
+        //ตรงนี้ต้องการทราบคำตอบว่า "นอนไปกี่ชั่วโมง"
+        scanf("%d", &sleep);
+
         if (sleep <= 5)
         {
             //ถ้านอนน้อยกว่า หรือ เท่ากับ 5 ชั่วโมง (sleep<=5)
@@ -61,7 +61,7 @@ int main()
             printf("Good Job!\n");
         }
 
-        else if (sleep > 8)
+        else if (sleep > 8 && sleep < 32)
         {
             //ถ้านอนมากกว่า 8 ชั่วโมงขึ้นไป (sleep>8)
             //ให้โปรแกรมแสดงคำแนะนำ "มึงนอนมากเกินไปแล้ว"
@@ -70,11 +70,11 @@ int main()
         }
         else
         {
-            printf("Error");
-            printf("\nDo you wnat to try again? (Y=1/N=0)");
-            scanf("%d",&try_again);
+            printf("Error!");
+            printf("\nDo you want to try again? (Y/N)");
+            scanf("%d", &try_again);
         }
-        
-    }
+    } while (try_again == 89);
+
     return (0);
 }
