@@ -11,6 +11,7 @@ int main()
     {
         printf("How many hours have you sleep?\n");
         //ตรงนี้ต้องการทราบคำตอบว่า "นอนไปกี่ชั่วโมง"
+        printf(">>> ");
         scanf("%d", &sleep);
 
         if (sleep <= 5)
@@ -19,6 +20,7 @@ int main()
             printf("-------------\n");
             printf("Do you have any problems in sleeping? (Y/N)\n");
             //โปรแกรมจะถามต่อว่า มีปัญหาการนอนหรือไม่ (Y/N)
+            printf(">>> ");
             scanf("%s", &sleep_problems);
 
             switch (sleep_problems)
@@ -59,6 +61,7 @@ int main()
         {
             printf("Error!");
             printf("\nDo you want to try again? (Y/N)");
+            printf(">>> ");
             scanf("%d", &try_again);
         }
 
