@@ -16,7 +16,7 @@ int main()
         if (sleep <= 5)
         {
             //ถ้านอนน้อยกว่า หรือ เท่ากับ 5 ชั่วโมง (sleep<=5)
-            printf("\t\t\t-------------\n");
+            printf("-------------\n");
             printf("Do you have any problems in sleeping? (Y/N)\n");
             //โปรแกรมจะถามต่อว่า มีปัญหาการนอนหรือไม่ (Y/N)
             scanf("%s", &sleep_problems);
