@@ -30,7 +30,7 @@ int main()
                 printf("Go back and sleep now!\n");
                 return (0);
                 break;
-            
+
             case 'N':
                 //ถ้าไม่มีปัญหาการนอน (N) ก็บอกว่าควรนอนมากกว่านี้
                 printf("You should sleep more!\n");

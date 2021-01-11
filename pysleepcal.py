@@ -1,9 +1,10 @@
 # pysleepcal.py
-sleep = (int(input("How many hours have you sleep? = ")))
+print("How many hours have you sleep?")
+sleep = (int(input(">>> ")))
 
 if sleep <= 5:
     print("Do you have any problem in sleeping? (Y/N)")
-    sleep_problem = (str(input()))
+    sleep_problem = (str(input(">>> ")))
     if sleep_problem == 'Y':
         print("Go back to sleep now!")
     elif sleep_problem == 'N':
