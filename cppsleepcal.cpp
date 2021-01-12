@@ -1,4 +1,4 @@
-//sleepcal.cpp
+//cppsleepcal.cpp
 #include <stdio.h>
 
 int main()
