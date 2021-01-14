@@ -15,3 +15,5 @@ elif sleep < 32:
     print("You sleep too much!")
 else:
     print("Error!")
+
+input()

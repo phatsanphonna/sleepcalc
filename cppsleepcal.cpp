@@ -1,4 +1,5 @@
-//cppsleepcal.cpp
+// cppsleepcal.cpp
+
 #include <stdio.h>
 
 int main()
@@ -61,7 +62,7 @@ int main()
         {
             printf("Error!");
             printf("\nDo you want to try again? (Y/N)");
-            printf(">>> ");
+            printf("\n>>> ");
             scanf("%d", &try_again);
         }
 
