@@ -6,19 +6,18 @@ def SleepCalcFormula():
         sleep_problem = (str(input(">>> ")))
 
         if sleep_problem == 'Y':
-            print("Go back to sleep now!")
+            print("\nGo back to sleep now!")
         elif sleep_problem == 'N':
-            print("You should sleep more!")
+            print("\nYou should sleep more!")
     
     elif sleep > 5 and sleep <= 8:
-        print("Good Job!")
+        print("\nGood Job!")
     
     elif sleep > 8 and sleep < 32:
-        print("You sleep too much!")
+        print("\nYou sleep too much!")
     
     else:
         print("\nError!")
-
 
 print("How many hours have you sleep?")
 sleep = int(input(">>> "))
