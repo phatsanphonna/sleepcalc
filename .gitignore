@@ -34,3 +34,4 @@
 # folder
 .vscode
 .dist
+__pycache__
