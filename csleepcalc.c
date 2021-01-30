@@ -5,7 +5,7 @@
 #include <conio.h>
 
 // Main Section
-int main()
+int main() 
 {
     int sleep;
     char sleep_problem;
@@ -44,23 +44,23 @@ int main()
     else if (sleep > 5 && sleep <= 8) // ถ้านอนน้อยกว่า 8 ชั่วโมง แต่มากกว่า 5 ชั่วโมง (5<sleep<8)
     {
         printf("-------------\n");
-        printf("Good Job!\n"); // ให้แสดงคำชม "ดีมาก"
+        printf("Good Job!\n");                // ให้แสดงคำชม "ดีมาก"
         printf("Press any key to exit...\n"); // ให้แสดงว่า "กดปุ่มอะไรก็ได้เพื่อออกจากโปรแกรม"
     }
 
     else if (sleep > 8 && sleep < 32) // ถ้านอนมากกว่า 8 ชั่วโมงขึ้นไป (sleep>8)
     {
         printf("-------------\n");
-        printf("You sleep too much!\n"); // ให้โปรแกรมแสดงคำแนะนำ "มึงนอนมากเกินไปแล้ว"
+        printf("You sleep too much!\n");      // ให้โปรแกรมแสดงคำแนะนำ "มึงนอนมากเกินไปแล้ว"
         printf("Press any key to exit...\n"); // ให้แสดงว่า "กดปุ่มอะไรก็ได้เพื่อออกจากโปรแกรม"
     }
 
     else if (sleep > 32)
     {
-       printf("Error!\n");
-       printf("Press any key to exit...\n"); // ให้แสดงว่า "กดปุ่มอะไรก็ได้เพื่อออกจากโปรแกรม"
+        printf("Error!\n");
+        printf("Press any key to exit...\n"); // ให้แสดงว่า "กดปุ่มอะไรก็ได้เพื่อออกจากโปรแกรม"
     }
-    
+
     getch();
     return 0;
 }
