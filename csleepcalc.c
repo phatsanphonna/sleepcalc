@@ -8,7 +8,7 @@
 int main()
 {
     int sleep;
-    char sleep_problem;
+    char sleepProblem;
 
     printf("How many hours have you sleep?\n"); // ตรงนี้ต้องการทราบคำตอบว่า "นอนไปกี่ชั่วโมง"
     printf(">>> ");
@@ -21,9 +21,9 @@ int main()
             printf("-------------\n");
             printf("Do you have any problems in sleeping? (Y/N)\n"); // โปรแกรมจะถามต่อว่า มีปัญหาการนอนหรือไม่ (Y/N)
             printf(">>> ");
-            scanf("%s", &sleep_problem);
+            scanf("%s", &sleepProblem);
 
-            switch (sleep_problem)
+            switch (sleepProblem)
             {
             case 'Y': // ถ้ามีปัญหาการนอน (Y) ให้ไล่กลับไปนอน
                 printf("Go back and sleep now!\n");
@@ -61,5 +61,4 @@ int main()
 
     getch();
     return 0;
-
 }
