@@ -25,13 +25,13 @@ int main()
 
             switch (sleepProblem)
             {
-            case 'Y': // ถ้ามีปัญหาการนอน (Y) ให้ไล่กลับไปนอน
-                printf("Go back and sleep now!\n");
+            case 'Y':
+                printf("Go back and sleep now!\n");   // ถ้ามีปัญหาการนอน (Y) ให้ไล่กลับไปนอน
                 printf("Press any key to exit...\n"); // ให้แสดงว่า "กดปุ่มอะไรก็ได้เพื่อออกจากโปรแกรม"
                 break;
 
-            case 'N': // ถ้าไม่มีปัญหาการนอน (N) ก็บอกว่าควรนอนมากกว่านี้
-                printf("You should sleep more!\n");
+            case 'N':
+                printf("You should sleep more!\n");   // ถ้าไม่มีปัญหาการนอน (N) ก็บอกว่าควรนอนมากกว่านี้
                 printf("Press any key to exit...\n"); // ให้แสดงว่า "กดปุ่มอะไรก็ได้เพื่อออกจากโปรแกรม"
                 break;
             }
@@ -55,7 +55,7 @@ int main()
         return 0;
     }
 
-    printf("Error!");
+    printf("\nError!");
     printf("\nPlease try again");
     printf("\nPress any key to exit...");
 
